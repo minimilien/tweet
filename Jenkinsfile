@@ -7,7 +7,7 @@ pipeline{
 					if(env.BRANCH_NAME != 'master'){
 						echo 'Building docker image'
 						
-						bat 'docker build -t data-eng:latest .
+						bat 'docker build -t data-eng:latest .'
 					}
 				}	
 			}
